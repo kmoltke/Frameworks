@@ -1,0 +1,149 @@
+1. Style FirstTest page without using Flexbox! 
+
+Create separate CSS file where all stylings should be put. Reference to this file form <head> element. 
+
+1.1 Style images to be standardized: 
+
+    border: 1px solid #ddd; /* Gray border */ 
+
+    border-radius: 4px;  /* Rounded border */ 
+
+    padding: 5px; /* Some padding */ 
+
+    width: 150px; /* Set a small width */ 
+
+    height: 150px; 
+
+1.2 Add a hover effect on image (blue shadow) 
+
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);   
+
+1.3  Use semantic HTML tags <figure> and <figcaption> to wrap image and its caption 
+
+1.4 Style <figure> element 
+
+    vertical-align: top; 
+
+    display: inline-block; 
+
+1.5 Style <figcaption> as: 
+
+    display: block; 
+
+    font-size: 18pt; 
+
+    font-family: cursive; 
+
+1.6 Make a class for question text and apply style 
+
+    text-align: center; 
+
+    font-size: 28pt; 
+
+    font-family: cursive; 
+
+1.7 Add <div> element to contain all answers (<a> elements) and style it 
+
+1.8 Make <div> to be class 'list-of-answers' and style it   
+
+    text-align: center;  
+
+ 
+
+2. Style SecondTest page using Flexbox to be responsive 
+
+2.1 Put <p> elements with the image caption text to be contained by corresponding <a> element 
+
+2.2 Add a new <div> element with class "flex-container" as container for all answers 
+
+2.3 Style class "flex-container" 
+
+    display: flex; 
+
+    flex-direction: row; 
+
+    align-items: center; 
+
+    justify-content: space-around; 
+
+    align-content: space-between; 
+
+    text-align: center; 
+
+    font-family: cursive; 
+
+    font-size: 18pt; 
+
+2.4.Add class "flex-item" to each <a> element and style it  
+
+    text-decoration: none;   
+
+2.5. Make "flex-container" to have "flex-direction: column" at 800px 
+
+  @media (max-width: 800px) { 
+
+    .flex-container { 
+
+      flex-direction: column; 
+
+    } 
+
+  } 
+
+ 
+
+3. Style Login page using Bootstrap to be responsive 
+
+3.1. Add in <head> element of login.html the following Bootstrap  link and script  tags : 
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+
+3.1 Style form elements using Bootstrap CSS framework 
+
+3.1.1 Add Bootstrap form-control class to input text fields fname and lname 
+
+<input class="form-control" type="text id="fname" ... 
+
+3.1.2 Replace existing login button with Bootstrap primary button: 
+
+<input class="btn btn-primary"   
+
+type="submit" onclick="store()" value="Login" /> 
+
+3.2.3 Add a new Bootstrap secondary button to cancel login 
+
+<input type="button" class="btn btn-secondary"  
+
+value="Cancel" onclick="history.back(-1)" /> 
+
+ 
+
+3.2. Use Bootstrap CSS framework to create a responsive grid of one row and 3 columns 
+
+  <div class="row"> 
+
+    <div class="col-sm-4"></div> 
+
+    <div class="col-sm-4">Login form elements come here</div> 
+
+    <div class="col-sm-4"></div> 
+
+  </div> 
+
+ 
+
+3.3.   Move elements of the login form to the second column 
+
+ 
+
+3.4.  Add a new  <h3> element above the form with content  “Please login to your account” 
+
+ 
+
+3.5. Add a new div elemnt to wrap <h3> and <form> elemnts and add margin 5px 
+
+<div class="container" style="margin:5px">  

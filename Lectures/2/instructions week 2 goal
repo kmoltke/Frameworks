@@ -1,0 +1,24 @@
+Exercise Session Goal: Upgrade BirdQuiz website to enable a user to:
+ (a) register and 
+ (b) to see his quiz statistics
+
+1. Enable user registration
+1.1  Create a login form enabling a user to enter his  first and last name
+1.2. When the user presses the login button, his first and last name should be stored in local storage, and he should go the home page
+1.3. Home page should show the text "<user's first name>, test your knowledge skills on birds!"
+
+2. Keep and show the statistics on how many times the user played the quiz - the number of attempts 
+2.1. When the user begins the quiz (i.e. the first question page displayed), increment number of attempts and save it in local storage.
+2.4. Create a statistics page which displays the user's full name and the number of attempts saved in local storage.
+2.5. Add a link in the statistics page to play the quiz again, i.e. to go to the first quiz question. 
+2.6. Add a link in the home page to go to the statistics page.
+
+3. Enhance the user's statistics with the number of wins and losses
+3.1. When the user wins the quiz (i.e. the winning page displayed), increment number of wins and save it in local storage.
+3.2. When the user fails the quiz (i.e. the losing page displayed), increment number of losses and save it in local storage.
+3.3. Enhance the statistics page to display the number of wins and losses
+
+4. Enhance the statistics page with additional functionality
+4.1 Add a link to reset statistics and enable login again.
+
+
