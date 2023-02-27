@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Statistics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles/bird-quiz.css"/>
+    <script src="scripts/statistics.js"></script>
+</head>
+<body>
+<h1 id="h1">Bird Quiz statistics for Anonymous User</h1>
+<a id="reset" href="login.html" onclick="reset()">Reset and login</a> <br>
+<h3 id="attempts">Number of attempts: 0</h3>
+<h3 id="wins">Number of wins: 0</h3>
+<h3 id="losses">Number of losses: 0</h3>
+<a id="begin" href="question1.html"> Play again!</a>
+<script>
+    document.body.onload = showStatistics();
+    function showStatistics() {
+        const userName = localStorage.fname + ' ' + localStorage.lname;
+        document.getElementById('h1').innerHTML = 'Bird Quiz statistics for ' + userName
+        document.getElementById('attempts').innerHTML = 'Number of attempts: ' + getAttempts()
+        document.getElementById('wins').innerHTML = 'Number of wins: ' + getWins()
+        document.getElementById('losses').innerHTML = 'Number of losses: ' + getLosses()
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+        <div class="container">
+            <h3>Please login to your account</h3>
+            <form action="index.html">
+                <label for="fname">First name:</label>
+                <input class="form-control" type="text" id="fname" name="fname" value="">
+                <label for="lname">First name:</label>
+                <input class="form-control" type="text" id="lname" name="lname" value="">
+                <input class="btn btn-primary" type="submit" onclick="store()" value="Login">
+                <input class="btn btn-secondary" type="button" value="Cancel" onclick="history.back(-1)">
+            </form>
+        </div>
+    </div>
+    <div class="col-sm-4"></div>
+</div>
+<script src="scripts/login.js"></script>
+</body>
+</html>
